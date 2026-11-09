@@ -1,0 +1,16 @@
+{
+    "ticker": "XTB",
+    "name": "XTB",
+    "currency": "PLN",
+    "last_updated": "2026-11-09T15:00:00",
+    "history": [
+        {
+            "date": "2026-11-06",
+            "open": 137.00,
+            "high": 140.00,
+            "low": 136.00,
+            "close": 138.00,
+            "volume": 125000
+        }
+    ]
+}
