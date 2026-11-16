@@ -13,3 +13,9 @@ def test_fetch_historical_data():
     assert isinstance(data, pd.DataFrame)
     assert not data.empty
     assert "Close" in data.columns
+
+def test_validate_historical_data():
+    service = MarketDataService()
+
+    data = service.fetch_historical_data("CDR.WA")
+    service.validate_historical_data(data)
