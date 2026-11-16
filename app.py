@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import streamlit as st
+import yfinance as yf
 
 
 st.set_page_config(
@@ -21,3 +22,13 @@ selected_stock = st.selectbox(
 )
 
 st.write(f"Selected stock: **{selected_stock}**")
+
+# download one pice of data for one ticker
+ticker = yf.Ticker("CDR.WA")
+history = ticker.history(
+    period="1y",
+    interval="1d",
+    auto_adjust=False
+)
+
+st.write(history.tail())

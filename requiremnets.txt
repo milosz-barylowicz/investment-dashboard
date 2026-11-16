@@ -2,3 +2,4 @@ pytest
 streamlit
 plotly
 pandas
+yfinance
